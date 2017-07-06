@@ -20,7 +20,7 @@ android {
     }
     //数据库配置
     greendao{
-        schemaVersion 1
+        schemaVersion 2
         //显式创建，指定路径，可以看到类
         //隐式创建，不指定路径，不可以看到类
 //        daoPackage 'com.hema.frame.greendaodemo.bean.greendao'
@@ -38,6 +38,8 @@ dependencies {
 
     compile'org.greenrobot:greendao:3.1.0'
     compile'org.greenrobot:greendao-generator:3.1.0'
+    //用来升级greendao数据库的辅助类
+    compile 'com.github.yuweiguocn:GreenDaoUpgradeHelper:v1.4.0'
 
     compile 'com.jakewharton:butterknife:latest.integration'
     compile 'com.jakewharton:butterknife-compiler:latest.integration'
